@@ -1,4 +1,4 @@
-# notes-master (Under development)
+# notes-master
 
 A simple notes app with following features:
 - Add, Edit & Delete notes
