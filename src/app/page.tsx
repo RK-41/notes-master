@@ -33,7 +33,7 @@ export default function Home() {
       <br />
 
       <Button size="lg" asChild>
-        <Link href="/notes">Open</Link>
+        <Link href="/sign-in">Open</Link>
       </Button>
     </main>
   );
