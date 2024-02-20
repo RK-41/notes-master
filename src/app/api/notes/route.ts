@@ -69,6 +69,12 @@ export async function PUT(req: Request) {
       return Response.json({ error: "Note not found" }, { status: 404 });
     }
 
+    const { userId } = auth();
+
+    if (!userId || userId !== note.userId) {
+      return Response.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
     const updatedNote = await prisma.note.update({
       where: { id },
       data: {
@@ -114,6 +120,6 @@ export async function DELETE(req: Request) {
     return Response.json({ message: "Note deleted" }, { status: 200 });
   } catch (error) {
     console.log(error);
-    return Response.json({ error: "Internal server error" });
+    return Response.json({ error: "Internal server error" }, { status: 500 });
   }
 }

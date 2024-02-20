@@ -25,10 +25,12 @@ export default function Home() {
         Pinecone, Next.js, Shadcn UI, Clerk, and more.
       </p> */}
 
-      <p className="max-w-prose text-center">
+      {/* <p className="max-w-prose text-center">
         A notes-taking app with Authentication, built with Next.js, Shadcn UI,
         Clerk, and more.
-      </p>
+      </p> */}
+
+      <br />
 
       <Button size="lg" asChild>
         <Link href="/notes">Open</Link>
