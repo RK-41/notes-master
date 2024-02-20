@@ -16,10 +16,10 @@ A simple notes app with following features:
 
 ## Test Users
 - ID: user1@gmail.com
-- Password: user1user
+ Password: user1user
 
 - ID: user2@gmail.com
-- Password: user2user2
+ Password: user2user2
   
 --------------------------------------------
 
