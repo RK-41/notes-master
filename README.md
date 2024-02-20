@@ -16,7 +16,7 @@ A simple notes app with following features:
 
 ## Test Users
 - ID: user1@gmail.com
-<br/> Password: user1user
+<br/> Password: user1user1
 
 - ID: user2@gmail.com
 <br/> Password: user2user2
