@@ -11,6 +11,15 @@ A simple notes app with following features:
 - MongoDB
 - Prisma
 - Clerk
+
+----
+
+## Test Users
+- ID: user1@gmail.com
+- Password: user1user
+
+- ID: user2@gmail.com
+- Password: user2user2
   
 --------------------------------------------
 
