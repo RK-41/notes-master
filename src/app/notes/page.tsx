@@ -6,6 +6,7 @@ import Note from "@/components/Note";
 import prisma from "@/lib/db/prisma";
 import { auth } from "@clerk/nextjs";
 import { Metadata } from "next";
+import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "NotesMaster - Notes",
@@ -14,7 +15,8 @@ export const metadata: Metadata = {
 export default async function NotesPage() {
   const { userId } = auth();
 
-  if (!userId) throw Error("User ID undefined");
+  //   if (!userId) throw Error("User ID undefined");
+  if (!userId) redirect("/sign-in");
 
   const allNotes = await prisma.note.findMany({ where: { userId } });
 
