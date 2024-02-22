@@ -15,8 +15,14 @@ export const metadata: Metadata = {
 export default async function NotesPage() {
   const { userId } = auth();
 
-  //   if (!userId) throw Error("User ID undefined");
-  if (!userId) redirect("/sign-in");
+  //   if (!userId)
+  //    throw Error("User ID undefined");
+
+  if (!userId) {
+    console.log("UserId not found, redirecting to sign-in");
+
+    redirect("/sign-in");
+  }
 
   const allNotes = await prisma.note.findMany({ where: { userId } });
 
