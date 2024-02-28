@@ -1,5 +1,7 @@
 # notes-master
 
+[Check it out here](https://notes-master-iota.vercel.app/)
+
 A simple notes app with following features:
 
 - Add, Edit & Delete notes
